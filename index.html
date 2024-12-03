@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
-<body >
+<body>
     <section class="section__first -section">
         <header class="header__nav">
             <h1 class="title__web">Mrdev</h1>
@@ -23,15 +23,15 @@
                     </div>
                     <div class="item__nav">
                         <ion-icon class="icon__nav"name="person-add-outline"></ion-icon>
-                        <a href="">Sobre mi</a>
+                        <a href="#about">Sobre mi</a>
                     </div>
                     <div class="item__nav">
                         <ion-icon class="icon__nav"name="briefcase-outline"></ion-icon>
-                        <a href="">Portafolio</a>
+                        <a href="https://portafoliojohanmora.netlify.app/">Portafolio</a>
                     </div>
                     <div class="item__nav">
                         <ion-icon class="icon__nav" name="mail-outline"></ion-icon>
-                        <a href="">contacto</a>
+                        <a href="contact.html">contacto</a>
                     </div>
             </div>
             </nav>
@@ -65,12 +65,12 @@
                 </p>
             </div>
             <div class="btnSecond__container">
-                <button class="btn__contact -btnSecond">servicios</button>
+                <button class="btn__contact -btnSecond" id="btn__servics">servicios</button>
             </div>
             
     </section>
     <div class="wrapper"></div>
-    <section class="section__third -section" id="servics">
+    <section class="section__third -section" >
         <h2 class="title__third">
             ¿En que punto te encuentras?
         </h2>
@@ -94,7 +94,7 @@
                     Tienes una web,pero es un de visitas o se ha quedado anciada a la prehistoria y quieres darle un aire fresco y nuevo para mejorar tu negocio.
                 </p>
             </div>
-            <div class="content___third -crear">
+            <div class="content___third -crear" id="servics">
                 <ion-icon class="icon" name="code-slash-outline"></ion-icon>
                 <h3  class="title__servics">Crea tu marca</h3>
                 <p class="p__servics">
@@ -103,13 +103,15 @@
             </div>
         </div>
     </section>
-    <section class="section__fourth -section">
+    <section class="section__fourth -section" id="servics">
         <h2 class="title__section4">Dime lo que puedo hacer por ti y nos pondremos en marcha.</h2>
         <div class="oferts__container">
             <div class="ofert__container">
                 <h3 class="h3__ofert">Web sencilla</h3>
                 <span class="span__ofert">A partir de</span>
                 <span class="price">70$</span>
+                <h3 class="cuota">¡Cuota de Mantenimiento!</h3>
+                <span class="price" id="priceM">15$</span>
                 <p class="p__ofert">
                     Elige la plantilla que mas te guste,pasame las fotos y los textos que quieras incluir en tu web y en 10 dias la tendras online.
                 </p>
@@ -119,6 +121,8 @@
                 <h3 class="h3__ofert">Pagina web</h3>
                 <span class="span__ofert">A partir de</span>
                 <span class="price">120$</span>
+                <h3 class="cuota">¡Cuota de Mantenimiento!</h3>
+                <span class="price" id="priceM">25$</span>
                 <p class="p__ofert">
                     Diseño de una pagina web con HTML,CSS y javascript totalmente personalizada. adaptada a ti y a tu negocio.
                 </p>
@@ -128,6 +132,8 @@
                 <h3 class="h3__ofert">tienda online</h3>
                 <span class="span__ofert">A partir de</span>
                 <span class="price">250$</span>
+                <h3 class="cuota">¡Cuota de Mantenimiento!</h3>
+                <span class="price" id="priceM">50$</span>
                 <p class="p__ofert">
                     Fiel a tu marca y funcionando en piloto automatico ¡lista para empezar a vender!
                 </p>
@@ -185,9 +191,34 @@
 		</g>
 	</svg>
     </section>
+    <footer>
+        <div class="about__footer" id="about">
+            <h3 class="h3__footer">about</h3>
+            <p class="about">
+            En Nombre de Mrdev, somos un equipo de desarrolladores y diseñadores web apasionados por transformar ideas en experiencias digitales. Nos especializamos en: <br><br>
+        
+            - Diseño Web Creativo: Interfaces atractivas que reflejan tu marca. <br>
+            - desarrolloa Medida: Soluciones tecnologicas adaptadas a tus necesidades.<br>
+            - Optimizacion SEO: Haciendo tu sitio facilmente encontrable.<br>
+            - Soporte y Mantenimiento: Asistencia continua para un funcionamiento optimo.<br><br>
+            
+            Creemos en la colaboracion y trabajamos contigo en cada etapa del proceso para hacer realidad tu vision. Unete a nosotros y lleva tu presencia en linea al siguiente nivel.<br>
+            </p>
+        </div>
+        <div class="contact__footer">
+            <h3 class="h3__footer">contacto</h3>
+            <span class="correo">@johanmora10000@gmai.com</span><br> 
+            <span class="cel">+58 424-207-97-12</span>
+        </div>
+        <div class="terminos">
+            <a href="terminos.html">terminos y condiciones</a>
+            <p class="copyright"><box-icon type='solid' name='copyright' color="#fdfefd"></box-icon>Copyright[2024]-Desarrollado por Johan Mora-Todos los Derechos reservados.</p>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="contact.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

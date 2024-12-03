@@ -33,3 +33,7 @@ document.getElementById("tienda").addEventListener('click',(e)=>{
 
     window.location.href = "contact.html"
 });
+document.getElementById("btn__servics").addEventListener('click',(e)=>{
+
+    window.location.href = "contact.html"
+});
