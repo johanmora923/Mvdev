@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <form action="https://formsubmit.co/johanmora10000@gmail.com" method="POST" class="form__content" >
+        <h1 class="title">Formulario de contacto</h1>
+        <div class="flex">
+            <label class="label -select" for="type__servics">Tipo de servicio</label>
+            <select required class="input__contact -select2" name="servics" id="type__servics">
+                <option value="web sencilla">web sencilla</option>
+                <option value="pagina web dinamica">web dinamica</option>
+                <option value="tienda">tienda online</option>
+                <option value="mantenimiento">mantenimiento</option>
+            </select>
+        </div>
+        <div id="section__information">
+            <h3 class="h3__modal">Informacion del cliente</h3>
+            <div class="content__information">
+                <div>
+                    <label  for="nombre__empresa">Nombre de la empresa</label>
+                    <input required class="input__contact -name" name="nombre de la empresa" id="nombre__empresa" type="text">
+                </div>
+                <div>
+                    <label for="actividad">Descripcion de su actividad</label>
+                    <textarea required class="input__contact -textarea" name="actividad" id="actividad"></textarea>
+                </div>
+                <div class="email__container">
+                    <label  for="email">email</label>
+                    <input required class="input__contact -email" name="email" id="email" type="email">
+                </div>
+                <div class="phone__container">
+                    <label for="contact">Numero de celular</label>
+                    <input required class="input__contact -contact" name="contact" id="contact" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="objetivos">
+            <h3 class="h3__modal">Objetivos del proyecto</h3>
+            <div class="content__objetivos">
+                <div class="checkbox__container">
+                    <input  type="checkbox" name="+ventas" id="checkbox+ventas">
+                    <label for="checkbox+ventas">Aumentar ventas</label>     
+                </div>
+                <div class="checkbox__container">
+                    <input  type="checkbox" name="+vistas" id="checkbox+vistas">
+                    <label for="checkbox+vistas">Mejorar la visibilidad</label>
+                </div>
+                <div class="checkbox__container">
+                    <input  type="checkbox" name="Informacion" id="checkbox__informacion">
+                    <label for="checkbox__informacion">Ofrecer Informacion</label>
+                </div>
+                <div class="checkbox__container">
+                    <input type="checkbox" name="otros__objetivos" id="otros">
+                    <label for="otros">Otros objetivos</label>
+                </div>
+                <div class="flex">
+                    <label class="label__otros" for="otros__objetivos">otros</label>
+                    <input  class="input__contact -objetivos" name="otros objetivos" id="otros__objetivos" type="text">
+                </div>
+                <div class="flex">
+                    <label for="publico">Publico objetivo</label>
+                    <input  class="input__contact -publico"  name="pulico" id="publico"  type="text">
+                </div>
+            </div>
+        </div>
+        <div class="styles">
+            <h3 class="h3__modal">Estilo y diseño</h3>
+            <div>
+                <div  class="flex">
+                    <label for="estetica">Preferencias esteticas</label>
+                    <input  class="input__contact" type="text" name="estetica" id="estetica">
+                </div>
+                <div class="flex">
+                    <label for="colores">Paleta de colores</label>
+                    <input class="input__contact" type="text" name="colores" id="colores" placeholder="Opcional">
+                </div>
+                <div class="flex">
+                    <label for="typografia">typografia</label>
+                    <input class="input__contact" type="text" name="typografia" id="typografia" placeholder="Opcional">
+                </div>
+                <div  class="flex">
+                    <label for="referencias">Referencias a otros sitios web</label>
+                    <input class="input__contact" type="text" name="referencias" id="referencias" placeholder="URL">
+                </div>
+            </div>
+        </div>
+        <div class="hosting">
+            <h3 class="h3__modal">Hosting y dominio</h3>
+            <div>
+                <div class="checkbox__container">
+                    <input type="checkbox" name="midominio" id="midominio">
+                    <label for="midominio">Tengo mi propio dominio</label>
+                </div>
+                <div class="checkbox__container">
+                    <input id="noDominio" name="noDominio" type="checkbox">
+                    <label for="noDominio">incluir servicios de hosting</label>
+                </div>
+            </div>
+            <a href="terminos.html">Termios y Condiciones</a>
+        </div>
+        <div class="btn__container">
+            <button id="cancel" class="btn__cancel">Cancelar</button>
+            <button class="btn__submit">Enviar</button>
+        </div>
+    </form>
+    <script src="contact.js"></script>
+</body>
+</html>

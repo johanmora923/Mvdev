@@ -1,0 +1,145 @@
+:root{
+    --primary-color: #d0f4e4;
+    --secundary-color: #66cdff;
+    --fondo-color: #fdfefd;
+    --logo-color: #48e;
+    --leter-color: #343a40;
+    --accion--color: #ffc107;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.form__content{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    background-color: var(--fondo-color);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.title{
+    margin-top: 3%;
+    margin-left: 3%;
+    color: var(--leter-color);
+}
+label{
+    font-size: 1.1em;
+}
+#section__information{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+}
+.content___information{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.h3__modal{
+    margin-bottom: 5%;
+    color: var(--leter-color);
+    margin-top: 3% ;
+}
+.input__contact{
+    width: 90%;
+    height: 3em;
+    background-color: #f5f5f5;
+    border: none;
+    margin-bottom: 3%;
+    outline: none;
+}
+.-contact{
+    width: 60%;
+}
+.email__container{
+    display: flex;
+    flex-direction: column;
+}
+.phone__container{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox__container{
+    margin-top: 2%;
+}
+.objetivos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.label__otros{
+    margin-top: 3%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.styles{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3%;
+}
+.hosting{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.btn__container{
+    margin-left: 50%;
+}
+.btn__submit{
+    margin: auto;
+    margin-bottom: 10%;
+    width: 100px;
+    height: 1.7em;
+    background-color: var(--logo-color);
+    color: var(--fondo-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.btn__submit:hover{
+    color: var(--accion--color);
+    background-color: #44e;
+}
+.btn__cancel{
+    margin: auto;
+    margin-bottom: 10%;
+    width: 100px;
+    height: 2em;
+    background-color: transparent;
+    color: #0009;
+    border: none;
+    font-size: 1.1em;
+}
+.btn__cancel:hover{
+    color: var(--accion--color);
+}
+a{
+    margin-top: 5%;
+    font-size: 1.1em;
+    color: var(--leter-color);
+}
+.-select2{
+    width: 73%;
+    margin: auto;
+    margin-left: 9%;
+}
+.-select{
+    width: 73%;
+    margin: auto;
+    margin-left: 9%;
+    margin-top: 5%;
+}
