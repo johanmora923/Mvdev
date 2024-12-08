@@ -23,7 +23,7 @@ body{
     background-image: url(fondo3.png);
     -webkit-animation:color-change-2x 2s linear infinite alternate both;animation:color-change-2x 2s linear infinite alternate both;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     animation: aparecer 3s -.6s both;
     container-type: inline-size;
@@ -626,11 +626,8 @@ footer{
 }
 
 @container body (min-width: 1200px){
-    .section__first{
-        height: auto;
-    }
     #contact1{
-        margin-bottom: 5%;
+        margin-bottom: 3%;
     }
     .section__second{
         grid-template-rows: repeat(auto,1fr);
