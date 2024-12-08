@@ -8,25 +8,24 @@
 </head>
 <body>
     <form action="https://formsubmit.co/johanmora10000@gmail.com" method="POST" class="form__content" >
-        <h1 class="title">Formulario de contacto</h1>
-        <div class="flex">
-            <label class="label -select" for="type__servics">Tipo de servicio</label>
-            <select required class="input__contact -select2" name="servics" id="type__servics">
-                <option value="web sencilla">web sencilla</option>
-                <option value="pagina web dinamica">web dinamica</option>
-                <option value="tienda">tienda online</option>
-                <option value="mantenimiento">mantenimiento</option>
-            </select>
+        <h1 class="title">formulario de contacto</h1>
+        <div id="servic__container" class="servic__container  escondido">
+            <label for="servic">servicio</label>
+            <input name="servicio" type="text" class="input__contact -servic" id="servic">
+        </div>
+        <div id="plantilla__container" class="plantilla__container  escondido">
+            <label for="namePlantilla">Modelo</label>
+            <input name="template"  type="text" class="input__contact -plantilla"  id="namePlantilla">
         </div>
         <div id="section__information">
-            <h3 class="h3__modal">Informacion del cliente</h3>
+            <h3 class="h3__modal">información del clientes</h3>
             <div class="content__information">
                 <div>
                     <label  for="nombre__empresa">Nombre de la empresa</label>
                     <input required class="input__contact -name" name="nombre de la empresa" id="nombre__empresa" type="text">
                 </div>
                 <div>
-                    <label for="actividad">Descripcion de su actividad</label>
+                    <label for="actividad">Descripción de su actividad</label>
                     <textarea required class="input__contact -textarea" name="actividad" id="actividad"></textarea>
                 </div>
                 <div class="email__container">
@@ -34,7 +33,7 @@
                     <input required class="input__contact -email" name="email" id="email" type="email">
                 </div>
                 <div class="phone__container">
-                    <label for="contact">Numero de celular</label>
+                    <label for="contact">Número de celular</label>
                     <input required class="input__contact -contact" name="contact" id="contact" type="number">
                 </div>
             </div>
@@ -52,7 +51,7 @@
                 </div>
                 <div class="checkbox__container">
                     <input  type="checkbox" name="Informacion" id="checkbox__informacion">
-                    <label for="checkbox__informacion">Ofrecer Informacion</label>
+                    <label for="checkbox__informacion">Ofrecer Información</label>
                 </div>
                 <div class="checkbox__container">
                     <input type="checkbox" name="otros__objetivos" id="otros">
@@ -63,20 +62,20 @@
                     <input  class="input__contact -objetivos" name="otros objetivos" id="otros__objetivos" type="text">
                 </div>
                 <div class="flex">
-                    <label for="publico">Publico objetivo</label>
+                    <label for="publico">Público objetivo</label>
                     <input  class="input__contact -publico"  name="pulico" id="publico"  type="text">
                 </div>
                 <div class="flex">
-                    <label for="publico">Funciones especificas (No aplica para web sencilla)</label>
+                    <label for="publico">Funciones específicas</label>
                     <textarea  class="input__contact -funciones"  name="funciones" id="funciones"  type="text"></textarea>
                 </div>
             </div>
         </div>
         <div class="styles">
             <h3 class="h3__modal">Estilo y diseño</h3>
-            <div>
+            <div class="content__styles">
                 <div  class="flex">
-                    <label for="estetica">Preferencias esteticas</label>
+                    <label for="estetica">Preferencias estéticas</label>
                     <input  class="input__contact" type="text" name="estetica" id="estetica">
                 </div>
                 <div class="flex">
@@ -84,17 +83,16 @@
                     <input class="input__contact" type="text" name="colores" id="colores" placeholder="Opcional">
                 </div>
                 <div class="flex">
-                    <label for="typografia">typografia</label>
+                    <label for="typografia">tipografía</label>
                     <input class="input__contact" type="text" name="typografia" id="typografia" placeholder="Opcional">
                 </div>
                 <div  class="flex">
                     <label for="referencias">Referencias a otros sitios web</label>
                     <input class="input__contact" type="text" name="referencias" id="referencias" placeholder="URL">
                 </div>
-                <div class="flex">
-                    <span class="span">Puedes enviar tus fotos y videos, o cualquier contenido que quieras mostrar en tu pagina a nuestro contacto de Whatsapp <br><br>
+                <div class="flex -whatsapp-container">
+                    <span class="span">Puedes enviar tus fotos y videos, o cualquier contenido que quieras mostrar en tu página a nuestro contacto de Whatsapp <br><br>
                     Si tienes alguna duda sobre el formulario puedes contactarnos a nuestro Whatsapp.
-
                     </span>
                     <button class="Whatsapp">
                         <ion-icon name="logo-whatsapp"></ion-icon>
@@ -104,19 +102,23 @@
         </div>
         <div class="hosting">
             <h3 class="h3__modal">Hosting y dominio</h3>
-            <div>
+            <div class="content__hosting">
                 <div class="checkbox__container">
                     <input type="checkbox" name="midominio" id="midominio">
-                    <label for="midominio">Tengo mi propio dominio</label>
+                    <label for="midominio">Tengo mí propio dominio</label>
                 </div>
                 <div class="checkbox__container">
                     <input id="noDominio" name="noDominio" type="checkbox">
                     <label for="noDominio">incluir servicios de hosting</label>
                 </div>
             </div>
-            <a href="terminos.html">Termios y Condiciones</a>
+            
         </div>
         <div class="btn__container">
+            <input required type="checkbox" name="terminos" id="terminos">
+            <label for="terminos">
+                <a href="terminos.html">Termios y Condiciones</a>
+            </label>
             <button id="cancel" class="btn__cancel">Cancelar</button>
             <button class="btn__submit">Enviar</button>
         </div>

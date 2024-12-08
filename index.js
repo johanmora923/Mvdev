@@ -19,21 +19,22 @@ const options = {
 
 document.querySelector(".btn__contact").addEventListener('click',()=>{
     window.location.href = "contact.html"   
-    e.preventDefault()
-    console.log(e.target)
 }); 
 
 document.getElementById("web__sencilla").addEventListener('click',()=>{
-    window.location.href = "contact.html"
+    window.location.href = "modelos.html"
 });
-document.getElementById("pagina").addEventListener('click',()=>{
-    window.location.href = "contact.html"
+
+document.getElementById("pagina").addEventListener('click',(e)=>{
+    const servic = e.target.getAttribute('data-servic')
+    window.location.href = `contact.html?servic=${encodeURIComponent(servic)}`
 });
+
 document.getElementById("tienda").addEventListener('click',(e)=>{
-
-    window.location.href = "contact.html"
+    const servic = e.target.getAttribute('data-servic')
+    window.location.href = `contact.html?servic=${encodeURIComponent(servic)}`
 });
-document.getElementById("btn__servics").addEventListener('click',(e)=>{
 
+document.getElementById("btn__servics").addEventListener('click',(e)=>{
     window.location.href = "contact.html"
 });
