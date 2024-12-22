@@ -134,7 +134,7 @@ a{
 .title__banner{
     margin: 0;
     margin: auto;
-    margin-top: 45%;
+    margin-top: 20%;
     font-weight: 750;
     font-size: 3em;
     color: var(--leter-color);
@@ -151,7 +151,7 @@ a{
     max-width: 300px;
     height: 3em;   
     margin: auto;    
-    margin-top: 10%;
+    margin-top: 0px;
     background-color: #000;
     color: var(--fondo-color);
     border: none;
@@ -168,8 +168,7 @@ a{
     font-size: 3em;
     animation: pulse 0.6s infinite;
     margin: auto;
-    z-index: -1;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 /*section 2------------------------------------------*/
